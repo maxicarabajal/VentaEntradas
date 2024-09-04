@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: entrada-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ventaeventos_entrada?serverTimezone=UTC
+    username: maxi
+    password: 1660
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
