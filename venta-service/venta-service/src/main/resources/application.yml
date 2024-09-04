@@ -4,8 +4,8 @@ spring:
 
   datasource:
     url: jdbc:mysql://localhost:3306/ventaeventos_venta?serverTimezone=UTC
-    username: maxi
-    password: 1660
+    username: ${USER_BBDD}
+    password: ${PASSWORD_BBDD}
 
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect

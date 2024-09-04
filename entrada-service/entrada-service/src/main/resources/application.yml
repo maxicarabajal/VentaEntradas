@@ -4,9 +4,8 @@ spring:
 
   datasource:
     url: jdbc:mysql://localhost:3306/ventaeventos_entrada?serverTimezone=UTC
-    username: maxi
-    password: 1660
-
+    username: ${USER_BBDD}
+    password: ${PASSWORD_BBDD}
   jpa:
     hibernate:
       ddl-auto: update
